@@ -69,11 +69,12 @@ export function RepositoryFinder() {
   return (
     <form onSubmit={formik.handleSubmit}>
       <TextField
-        label="Organisation name"
+        style={{ width: 300 }}
+        variant="filled"
+        label="Organisation name or username"
         name="name"
         onChange={formik.handleChange}
         value={formik.values.name}
-        variant="outlined"
       />
     </form>
   );

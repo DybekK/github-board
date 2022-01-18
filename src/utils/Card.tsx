@@ -5,9 +5,8 @@ const Container = styled.div({
   display: "flex",
   flexDirection: "column",
   padding: "6em",
-  minHeight: 200,
-  width: 800,
-  minWidth: 100
+  width: 1000,
+  minWidth: 500
 });
 
 type CardProps = {

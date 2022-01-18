@@ -55,7 +55,7 @@ function MainRepositoriesBody({
     return (
       <RepositoryGenericRow>
         <Alert severity="info">
-          Type the organisation or user name and list all repositories!
+          Type the organisation or username and list all repositories!
         </Alert>
       </RepositoryGenericRow>
     );

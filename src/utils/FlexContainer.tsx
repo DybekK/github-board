@@ -5,7 +5,8 @@ const Container = styled.div({
   display: "flex",
   height: "auto",
   width: "100vw",
-  justifyContent: "center"
+  justifyContent: "center",
+  alignItems: "center"
 });
 
 type FlexContainerProps = {
