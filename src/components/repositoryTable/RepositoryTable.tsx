@@ -14,6 +14,7 @@ import StarIcon from "@mui/icons-material/Star";
 import CommitIcon from "@mui/icons-material/Commit";
 
 const columns: readonly ColumnType[] = [
+  { id: "open", label: "", minWidth: 20, Icon: undefined },
   { id: "name", label: "Name", minWidth: 170, Icon: GitHubIcon },
   { id: "watchers", label: "Watchers", minWidth: 170, Icon: VisibilityIcon },
   { id: "stars", label: "Stars", minWidth: 170, Icon: StarIcon },

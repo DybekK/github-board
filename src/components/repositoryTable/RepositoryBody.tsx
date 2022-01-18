@@ -22,14 +22,16 @@ function createData({
   name,
   watchers_count,
   stargazers_count,
-  pushed_at
+  pushed_at,
+  html_url
 }: GitHubData) {
   return {
     id,
     name,
     watchers: watchers_count,
     stars: stargazers_count,
-    pushedAt: format(new Date(pushed_at), "dd-MM-yyyy HH:mm")
+    pushedAt: format(new Date(pushed_at), "dd-MM-yyyy HH:mm"),
+    htmlUrl: html_url
   };
 }
 
@@ -93,7 +95,13 @@ function MainRepositoriesBody({
         .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
         .map(createData)
         .map((repository) => {
-          return <RepositoryRow {...repository} columns={columns} />;
+          return (
+            <RepositoryRow
+              {...repository}
+              key={repository.id}
+              columns={columns}
+            />
+          );
         })}
     </Fragment>
   );

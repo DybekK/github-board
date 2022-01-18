@@ -8,7 +8,7 @@ export function RepositoryGenericRow({
 }) {
   return (
     <TableRow>
-      <TableCell colSpan={4}>{children}</TableCell>
+      <TableCell colSpan={3}>{children}</TableCell>
     </TableRow>
   );
 }
